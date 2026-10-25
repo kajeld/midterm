@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Winter</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+
+<!-- UNIVERSAL NAVIGATION -->
+
+<!-- Hidden checkbox controlling menu -->
+<input type="checkbox"
+       id="menu-toggle"
+       class="menu-toggle"
+       aria-label="Toggle navigation menu">
+
+
+<!-- Hamburger icon -->
+<label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+
+<!-- Dark overlay (click to close) -->
+<label for="menu-toggle"
+       class="menu-overlay"
+       aria-label="Close navigation menu">
+</label>
+
+
+<!-- Slide-out navigation -->
+<nav class="side-menu" aria-label="Main navigation">
+
+    <!-- X to close menu -->
+    <label for="menu-toggle"
+           class="menu-close"
+           aria-label="Close navigation menu">
+        &times;
+    </label>
+
+
+    <!-- Menu links -->
+    <div class="menu-links">
+
+        <a href="dreams.html">dreams</a>
+
+        <a href="https://cameronwinter.lnk.to/LiveatCarnegieHall"
+           target="_blank"
+           rel="noopener noreferrer">
+            listen
+        </a>
+
+        <a href="in_the_world.html">in the world</a>
+
+        <a href="theories.html">theories</a>
+
+        <a href="portraits.html">portraits</a>
+
+        <a href="index.html#signup">guestbook</a>
+
+        <a href="store.html">store</a>
+
+    </div>
+
+</nav>
+
+
+  <!-- Opening Gate Animation -->
+    <div class="intro">
+        <img src="assets/Gate_Animation.gif" alt="Opening gate animation">
+    </div>
+
+<!-- homepage -->
+<main class="homepage">
+
+    <!-- header -->
+    <header class="home-header">
+
+        <!-- CAMERON WINTER TITLE -->
+        <h1 class="home-title">
+            <span class="title-cameron">Cameron</span>
+            <span class="title-winter">Winter</span>
+        </h1>
+
+
+    </header>
+
+    <!-- DARK OVERLAY -->
+<div class="menu-overlay"></div>
+
+
+<!-- SLIDE-OUT NAVIGATION -->
+<nav class="side-menu" id="side-menu" aria-label="Main navigation">
+
+    <button class="menu-close"
+            type="button"
+            aria-label="Close menu">
+        &times;
+    </button>
+
+    <div class="menu-links">
+
+        <a href="dreams.html">Dreams</a>
+
+        <a href="https://cameronwinter.lnk.to/LiveatCarnegieHall"
+           target="_blank"
+           rel="noopener noreferrer">Listen</a>
+
+        <a href="in_the_world.html">In the World</a>
+
+        <a href="theories.html">Theories</a>
+
+        <a href="portraits.html">Portraits</a>
+
+        <a href="index.html#signup">Guestbook</a>
+
+        <a href="store.html">Store</a>
+
+    </div>
+
+</nav>
+
+
+<!-- windows and illustrations -->
+<section class="window-section">
+
+    <div class="window-stage">
+
+        <!-- gothic window PNG -->
+        <img src="assets/WindowsUpdated.png"
+             class="window-drawing"
+             alt="Decorative gothic windows">
+
+        <!-- clickable illustrations -->
+        <div class="window-links">
+
+            <!-- left window: owl -->
+            <a href="dreams.html" class="window-link owl-link">
+                <img src="assets/owl.png"
+                     class="window-art"
+                     alt="Owl illustration">
+
+                <span class="hover-title">Dreams</span>
+            </a>
+
+            <!-- center window: portrait -->
+            <a href="https://cameronwinter.lnk.to/LiveatCarnegieHall"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="window-link portrait-link">
+
+                <img src="assets/portrait.png"
+                     class="window-art"
+                     alt="Cameron Winter portrait">
+
+                <span class="hover-title">Listen</span>
+            </a>
+
+            <!-- right window: piano -->
+            <a href="in_the_world.html"
+               class="window-link piano-link">
+
+                <img src="assets/piano.png"
+                     class="window-art"
+                     alt="Hands playing piano">
+
+                <span class="hover-title">In the World</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- scroll down for email -->
+    <a href="#signup" class="scroll-text">
+        Sign up below ↓
+    </a>
+
+</main>
+
+  <!-- black stripe below windows -->
+    <div 
+    class="black-stripe">
+    </div>
+
+    <!-- email sign up section -->
+    <footer id="signup" class="signup-section">
+
+<!-- email sign up section -->
+<footer id="signup" class="signup-section">
+
+    <h2>Join the Guestbook</h2>
+
+    <p>Sign up for news and occasional signs of life.</p>
+
+    <!-- email form -- doesn't actually function-->
+    <form class="email-form">
+
+        <label for="email">Email Address</label>
+
+        <div class="email-box">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+                required>
+
+            <button type="submit" aria-label="Submit email">
+                →
+            </button>
+        </div>
+
+    </form>
+
+</footer>
+
+</body>
+</html>

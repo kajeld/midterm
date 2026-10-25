@@ -1,0 +1,476 @@
+
+/* Constant Page Settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFCF9;
+}
+ /* Homepage Fonts and Colors*/
+
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: 'Old England Gothic';
+    src: url('assets/Old\ England\ Gothic.otf')
+         format('TrueType');
+         font-weight: normal;
+         font-style: normal; 
+}
+
+@font-face{
+    font-family:'Stamping Nico';
+    src: url('assets/Stamping\ Nico.ttf')
+    format('TrueType');
+    font-weight: normal
+}
+
+
+:root {
+    --cream: #FFFCF9;
+    --black: #000000;
+    --blue: #787EA2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Opening Gate Animation */
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+    z-index: 100;
+
+    animation: hideIntro 0s 1.8s forwards;
+}
+
+/* Gate GIF*/
+
+.intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    animation: hideGate 0s 1.5s forwards;
+}
+
+/* to hide the gate after 3 seconds */
+
+@keyframes hideGate {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* to hide the white intro screen after 0.3 seconds */
+
+@keyframes hideIntro {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+/* homepage */
+
+.homepage {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    min-height: 0;
+
+    background-color: #000000;
+
+    overflow: hidden;
+}
+
+
+
+/* homepage background */
+
+.homepage {
+    position: relative;
+    min-height: 120vh;
+    background-color: #FFFCF9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* header */
+
+.home-header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    z-index: 5;
+}
+
+
+/* cameron winter title */
+
+.home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 45px 0 0;
+
+    font-family: 'Old England Gothic', serif;
+    font-size: 155px;
+    font-weight: normal;
+
+    color: white;
+
+    position: relative;
+    z-index: 4;
+}
+
+/* .title-cameron {
+    display: inline-block;
+    transform: rotate(-5deg) translateY(8px);
+} */
+
+/* .title-winter {
+    display: inline-block;
+    transform: rotate(10deg) translateY(8px);
+} */
+
+:root {
+    --menu-icon-color: white;
+}
+
+
+/* window section */
+
+.window-section {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* background window panels */
+
+.window-backgrounds {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    padding: 0 10% 5%;
+}
+
+.window-panel {
+    width: 29%;
+    height: 67%;
+
+
+    border-radius: 48% 48% 7% 7% / 22% 22% 5% 5%;
+}
+
+/* window png */
+
+.window-drawing {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 110%;
+    height: 100%;
+
+    transform: translateX(-50%);
+
+    object-fit: fill;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+
+/* WINDOW SECTION */
+
+.window-section {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* SHARED WINDOW STAGE */
+
+.window-stage {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 110%;
+    height: 100%;
+
+    transform: translateX(-50%);
+}
+
+
+/* ILLUSTRATION CONTAINER */
+
+.window-links {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* INDIVIDUAL ILLUSTRATION LINKS */
+
+.window-link {
+    position: absolute;
+
+    top: 76%;
+
+    width: 19%;
+    height: 35%;
+
+    transform: translate(-50%, -50%);
+
+    display: block;
+
+    text-decoration: none;
+    color: black;
+
+    pointer-events: auto;
+}
+
+
+/* POSITION LINKS IN EACH WINDOW */
+
+/* left window */
+.owl-link {
+    left: 21.5%;
+     width: 13%;
+    height: 25%;
+    top: 78%;
+}
+
+/* center window */
+.portrait-link {
+    left: 50%;
+    width: 13%;
+    height: 30%;
+}
+
+/* right window */
+.piano-link {
+    left: 77.3%;
+    width: 13%;
+    height: 37%;
+}
+
+
+/* SHARED ILLUSTRATION STYLING */
+
+.window-art {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* HOVER TEXT */
+
+.hover-title {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-family: "Courier New", monospace;
+    font-size: 22px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    color: black;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* HOVER EFFECTS */
+
+.window-link:has(.window-art:hover) .window-art {
+    opacity: 0.65;
+}
+
+.window-link:has(.window-art:hover) .hover-title {
+    opacity: 1;
+}
+
+/* email sign up words */
+
+.scroll-text {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: "courier new", monospace;
+    font-size: 12px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: white;
+    text-decoration: none;
+
+    z-index: 5;
+}
+
+/* BLACK STRIPE BELOW WINDOWS */
+
+.black-stripe {
+    width: 100%;
+    height: 100px;
+
+    background-color: black;
+}
+
+/* email sign up section */
+
+.signup-section {
+    width: 100%;
+    min-height: 150px;
+
+    padding: 15px 15px;
+
+    /* background-color: #A09DBA; */
+    background-color: #78713C;
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+.signup-section h2 {
+    margin: 0 0 15px;
+
+    font-family: "Old England Gothic", serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.signup-section p {
+    font-family: "courier new", monospace;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* email form -- not working yet*/
+
+.email-form {
+    width: min(450px, 90%);
+    margin: 0 auto 60px;
+
+    text-align: left;
+}
+
+.email-form label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-family: 'courier new', monospace;
+    font-size: 12px;
+}
+
+.email-box {
+    display: flex;
+    border-bottom: 1px solid #272421;
+}
+
+.email-box input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 12px 0;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: 'courier new', monospace;
+    font-size: 14px;
+}
+
+.email-box button {
+    padding: 10px 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 22px;
+    cursor: pointer;
+}
