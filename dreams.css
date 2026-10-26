@@ -63,7 +63,7 @@ body {
     flex-direction: column;
 
     font-family: 'Old England Gothic', serif;
-    font-size: 90px;
+    font-size: clamp(35px, 5vw, 90px);
     font-weight: normal;
     line-height: 1.1;
 
@@ -213,45 +213,146 @@ body {
 }
 
 
-/* SMALLER SCREENS */
 
-@media (max-width: 768px) {
+
+/* SMALLER LAPTOPS */
+
+@media (max-width: 1400px) {
 
     .logo {
         top: 25px;
-        left: 5%;
+        font-size: clamp(35px, 5vw, 70px);
+    }
 
-        font-size: 32px;
+    .dreams-page {
+        padding-top: 110px;
+    }
+
+    .dreams-owl img {
+        width: clamp(110px, 10vw, 145px);
+        height: auto;
+        max-height: 150px;
+    }
+
+    .dreams-carousel {
+        width: 70%;
+    }
+
+    .carousel-arrow {
+        font-size: clamp(24px, 2.3vw, 32px);
+    }
+
+    .video-caption {
+        font-size: clamp(12px, 1vw, 14px);
+    }
+}
+
+
+/* TABLET AND NARROW LAPTOP */
+
+@media (max-width: 1050px) {
+
+    .logo {
+        top: 25px;
+        left: 4%;
+
+        font-size: clamp(32px, 5vw, 52px);
     }
 
     .dreams-page {
         padding-top: 150px;
+        padding-bottom: 75px;
+    }
+
+    .dreams-owl {
+        margin-bottom: 30px;
     }
 
     .dreams-owl img {
-        width: 110px;
-        height: 115px;
+        width: 115px;
+        max-height: 120px;
     }
 
     .dreams-carousel {
-        width: 95%;
+        width: 85%;
     }
 
     .carousel-layout {
-        grid-template-columns: 25px minmax(0, 1fr) 25px;
-        column-gap: 5px;
+        grid-template-columns: 35px minmax(0, 1fr) 35px;
+        column-gap: 10px;
     }
 
     .carousel-arrow {
-        font-size: 25px;
-    }
-
-    .video-caption {
-        font-size: 12px;
+        font-size: 26px;
     }
 
     .dreams-description {
-        font-size: 12px;
         margin-top: 45px;
+        font-size: 12px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    /* Hide Cameron Winter wordmark */
+
+    .logo {
+        display: none;
+    }
+
+    .dreams-header {
+        display: none;
+    }
+
+    /* Leave room for hamburger */
+
+    .dreams-page {
+        padding-top: 115px;
+        padding-bottom: 60px;
+    }
+
+    /* Center and shrink owl */
+
+    .dreams-owl {
+        margin-bottom: 35px;
+    }
+
+    .dreams-owl img {
+        width: 95px;
+        height: 105px;
+    }
+
+    /* Video carousel */
+
+    .dreams-carousel {
+        width: 96%;
+    }
+
+    .carousel-layout {
+        grid-template-columns: 24px minmax(0, 1fr) 24px;
+        column-gap: 4px;
+    }
+
+    .carousel-arrow {
+        font-size: 22px;
+    }
+
+    .video-container {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .video-caption {
+        margin-top: 15px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .dreams-description {
+        margin-top: 35px;
+        font-size: 11px;
     }
 }

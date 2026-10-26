@@ -203,3 +203,105 @@
         font-size: 30px;
     }
 }
+
+
+/* =====================================
+   RESPONSIVE UNIVERSAL MENU
+   ===================================== */
+
+
+/* SMALLER LAPTOPS */
+
+@media (max-width: 1400px) {
+
+    .hamburger {
+        top: 30px;
+        right: 4%;
+
+        width: 36px;
+        height: 26px;
+    }
+
+    .side-menu {
+        width: 320px;
+        padding: 90px 35px 35px;
+    }
+
+    .menu-links {
+        gap: 25px;
+    }
+
+    .menu-links a {
+        font-size: 38px;
+    }
+}
+
+
+/* TABLET AND NARROW LAPTOP */
+
+@media (max-width: 1050px) {
+
+    .hamburger {
+        top: 28px;
+        right: 5%;
+
+        width: 32px;
+        height: 24px;
+    }
+
+    .side-menu {
+        width: 300px;
+        max-width: 85%;
+
+        padding: 85px 30px 35px;
+    }
+
+    .menu-links {
+        gap: 23px;
+    }
+
+    .menu-links a {
+        font-size: 32px;
+    }
+
+    .menu-close {
+        top: 22px;
+        right: 25px;
+
+        font-size: 35px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .hamburger {
+        top: 25px;
+        right: 6%;
+
+        width: 30px;
+        height: 22px;
+    }
+
+    .side-menu {
+        width: 85%;
+        max-width: 350px;
+
+        padding: 85px 30px 35px;
+    }
+
+    .menu-links {
+        gap: 24px;
+    }
+
+    .menu-links a {
+        font-size: 30px;
+    }
+
+    .menu-close {
+        top: 20px;
+        right: 25px;
+    }
+}
