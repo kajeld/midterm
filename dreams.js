@@ -2,7 +2,7 @@
 /* DREAMS VIDEO CAROUSEL */
 
 
-/* STEP 1: LIST OF VIDEOS */
+/* list of videos */
 
 const videos = [
 
@@ -34,12 +34,11 @@ const videos = [
 ];
 
 
-/* STEP 2: START WITH THE FIRST VIDEO */
+
 
 let currentVideo = 0;
 
 
-/* STEP 3: FIND THE HTML ELEMENTS */
 
 const videoPlayer = document.querySelector("#dreams-video");
 
@@ -50,7 +49,6 @@ const previousButton = document.querySelector(".previous");
 const nextButton = document.querySelector(".next");
 
 
-/* STEP 4: DISPLAY THE SELECTED VIDEO */
 
 function showVideo() {
 
@@ -65,7 +63,7 @@ function showVideo() {
 }
 
 
-/* STEP 5: RIGHT ARROW */
+/* right arrow */
 
 nextButton.addEventListener("click", function() {
 
@@ -80,7 +78,7 @@ nextButton.addEventListener("click", function() {
 });
 
 
-/* STEP 6: LEFT ARROW */
+/* left arrow */
 
 previousButton.addEventListener("click", function() {
 
@@ -95,6 +93,6 @@ previousButton.addEventListener("click", function() {
 });
 
 
-/* STEP 7: SHOW THE FIRST VIDEO WHEN PAGE LOADS */
+
 
 showVideo();
